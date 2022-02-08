@@ -9,15 +9,19 @@ public class switchCameras : MonoBehaviour
 
     public GameObject camOne;
     public GameObject camTwo;
-    private GameObject[] currentCam;
-    public int iterator;
+    public List<GameObject> cameras;
+    public int i;
+    public int sizeCheck;
+    private int maxCameras;
 
     private void Start()
     {
         camOne.SetActive(true);
-        currentCam[0] = camOne;
-        currentCam[1] = camTwo;
-        iterator = 0;
+        cameras[0] = camOne;
+        cameras[1] = camTwo;
+        i = 0;
+        maxCameras = cameras.Count;
+        sizeCheck = i + 1;
     }
 
     // Update is called once per frame
@@ -26,15 +30,41 @@ public class switchCameras : MonoBehaviour
 
         if (Input.GetButtonDown("camRight"))
         {
-            camOne.SetActive(false);
-            camTwo.SetActive(true);
+            cameras[i].SetActive(false);
+
+            if(sizeCheck < maxCameras)
+            {
+                i++;
+                sizeCheck++;
+            }
+
+            cameras[i].SetActive(true);
+
+            //camOne.SetActive(false);
+            //camTwo.SetActive(true);
 
         }
 
         if (Input.GetButtonDown("camLeft"))
         {
-            camOne.SetActive(true);
-            camTwo.SetActive(false);            
+            cameras[i].SetActive(false);
+
+            if (sizeCheck-1 < 1)
+            {
+                i = 0;
+                sizeCheck = 1;
+            }
+            else
+            {
+                i--;
+                sizeCheck--;
+            }
+
+
+            cameras[i].SetActive(true);
+
+            //camOne.SetActive(true);
+            //camTwo.SetActive(false);            
         }
 
     }

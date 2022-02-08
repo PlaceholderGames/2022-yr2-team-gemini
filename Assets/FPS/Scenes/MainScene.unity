@@ -1574,7 +1574,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camOne: {fileID: 1642165710}
   camTwo: {fileID: 428048217}
-  iterator: 0
+  cameras:
+  - {fileID: 0}
+  - {fileID: 0}
+  i: 0
+  sizeCheck: 0
 --- !u!4 &2091206812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2141676431450117668, guid: cd17687759887a0438ee021e51abc9d9,
