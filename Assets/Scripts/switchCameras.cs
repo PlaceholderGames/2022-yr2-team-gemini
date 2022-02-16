@@ -9,6 +9,8 @@ public class switchCameras : MonoBehaviour
 
     public GameObject camOne;
     public GameObject camTwo;
+    public GameObject camThree;
+    public GameObject camFour;
     public List<GameObject> cameras;
     public int i;
     public int sizeCheck;
@@ -19,6 +21,8 @@ public class switchCameras : MonoBehaviour
         camOne.SetActive(true);
         cameras[0] = camOne;
         cameras[1] = camTwo;
+        cameras[2] = camThree;
+        cameras[3] = camFour;
         i = 0;
         maxCameras = cameras.Count;
         sizeCheck = i + 1;
