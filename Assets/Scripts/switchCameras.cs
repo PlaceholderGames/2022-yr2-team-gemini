@@ -7,22 +7,34 @@ using UnityEngine;
 public class switchCameras : MonoBehaviour
 {
 
-    public GameObject camOne;
-    public GameObject camTwo;
-    public GameObject camThree;
-    public GameObject camFour;
-    public List<GameObject> cameras;
+    public Camera camOne;
+    public Camera camTwo;
+    public Camera camThree;
+    public Camera camFour;
+    public List<Camera> cameras;
     public int i;
     public int sizeCheck;
     private int maxCameras;
 
     private void Start()
     {
-        camOne.SetActive(true);
-        cameras[0] = camOne;
-        cameras[1] = camTwo;
-        cameras[2] = camThree;
-        cameras[3] = camFour;
+
+        /*        cameras[0] = camOne;
+                cameras[1] = camTwo;
+                cameras[2] = camThree;
+                cameras[3] = camFour;*/
+
+        cameras.Add(camOne);
+        cameras.Add(camTwo);
+        cameras.Add(camThree);
+        cameras.Add(camFour);
+
+        camOne.enabled = true;
+        camTwo.enabled = false;
+        camThree.enabled = false;
+        camFour.enabled = false;
+
+
         i = 0;
         maxCameras = cameras.Count;
         sizeCheck = i + 1;
@@ -34,7 +46,7 @@ public class switchCameras : MonoBehaviour
 
         if (Input.GetButtonDown("camRight"))
         {
-            cameras[i].SetActive(false);
+            cameras[i].enabled = false;
 
             if(sizeCheck < maxCameras)
             {
@@ -42,7 +54,7 @@ public class switchCameras : MonoBehaviour
                 sizeCheck++;
             }
 
-            cameras[i].SetActive(true);
+            cameras[i].enabled = true;
 
             //camOne.SetActive(false);
             //camTwo.SetActive(true);
@@ -51,7 +63,7 @@ public class switchCameras : MonoBehaviour
 
         if (Input.GetButtonDown("camLeft"))
         {
-            cameras[i].SetActive(false);
+            cameras[i].enabled = false;
 
             if (sizeCheck-1 < 1)
             {
@@ -65,7 +77,7 @@ public class switchCameras : MonoBehaviour
             }
 
 
-            cameras[i].SetActive(true);
+            cameras[i].enabled = true;
 
             //camOne.SetActive(true);
             //camTwo.SetActive(false);            
