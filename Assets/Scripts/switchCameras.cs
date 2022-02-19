@@ -11,6 +11,7 @@ public class switchCameras : MonoBehaviour
     public Camera camTwo;
     public Camera camThree;
     public Camera camFour;
+    public Camera camFive;
     public List<Camera> cameras;
     public int i;
     public int sizeCheck;
@@ -28,11 +29,13 @@ public class switchCameras : MonoBehaviour
         cameras.Add(camTwo);
         cameras.Add(camThree);
         cameras.Add(camFour);
+        cameras.Add(camFive);
 
         camOne.enabled = true;
         camTwo.enabled = false;
         camThree.enabled = false;
         camFour.enabled = false;
+        camFive.enabled = false;
 
 
         i = 0;
