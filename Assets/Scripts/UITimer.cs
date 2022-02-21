@@ -11,7 +11,9 @@ public class UITimer : MonoBehaviour
 
     private void Start()
     {
-		Timer = 20;
+		//1 = 1 second
+		//600 = 10 minutes
+		Timer = 600;
     }
 
     void Update()

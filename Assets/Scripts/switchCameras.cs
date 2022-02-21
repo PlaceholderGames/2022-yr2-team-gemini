@@ -40,6 +40,7 @@ public class switchCameras : MonoBehaviour
         sizeCheck = i + 1;
     }
 
+
     // Update is called once per frame
     void Update()
     {
