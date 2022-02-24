@@ -5,6 +5,8 @@ public class gunShooter : MonoBehaviour
 
     public float damage = 10f;
     public float range = 100f;
+    public int TargetCounter = 0;
+    [SerializeField] GameObject key;
 
     public Camera fpsCam;
 
@@ -14,6 +16,11 @@ public class gunShooter : MonoBehaviour
         if (Input.GetButtonDown("Fire"))
         {
             Shoot();
+        }
+
+        if (TargetCounter == 7)
+        {
+            key.SetActive(true);
         }
 
 
@@ -27,7 +34,9 @@ public class gunShooter : MonoBehaviour
         {
             if(hit.transform.name == "target")
             {
+                TargetCounter += 1;
                 Destroy(hit.transform.gameObject);
+
             }
         }
     }
