@@ -6,9 +6,9 @@ public class secondInvisFloorRand : MonoBehaviour
     public GameObject thingWithScript;
     private FirstInvisFloorRandomiser firstFloorScript;
 
-    [SerializeField] GameObject fourthPattern;
-    [SerializeField] GameObject fifthPattern;
-    [SerializeField] GameObject sixthPattern;
+    [SerializeField] public GameObject fourthPattern;
+    [SerializeField] public GameObject fifthPattern;
+    [SerializeField] public GameObject sixthPattern;
 
     //Initialiser for the random number
     private int randNum = 0;
