@@ -3,12 +3,12 @@ using UnityEngine;
 public class FirstInvisFloorRandomiser : MonoBehaviour
 {
     //Initialisers for the floor patterns
-    [SerializeField] GameObject firstPattern;
-    [SerializeField] GameObject secondPattern;
-    [SerializeField] GameObject thirdPattern;
+    [SerializeField] public GameObject firstPattern;
+    [SerializeField] public GameObject secondPattern;
+    [SerializeField] public GameObject thirdPattern;
 
     //Initialiser for the random number
-    int randNum = 0;
+    private int randNum = 0;
 
     // Start is called before the first frame update
     void Start()

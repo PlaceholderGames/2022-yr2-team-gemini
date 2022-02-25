@@ -11,6 +11,11 @@ public class switchCameras : MonoBehaviour
     public Camera camTwo;
     public Camera camThree;
     public Camera camFour;
+    public Camera camFive;
+    public Camera camSix;
+    public Camera camSeven;
+    public Camera camEight;
+
     public List<Camera> cameras;
     public int i;
     public int sizeCheck;
@@ -19,20 +24,23 @@ public class switchCameras : MonoBehaviour
     private void Start()
     {
 
-        /*        cameras[0] = camOne;
-                cameras[1] = camTwo;
-                cameras[2] = camThree;
-                cameras[3] = camFour;*/
-
         cameras.Add(camOne);
         cameras.Add(camTwo);
         cameras.Add(camThree);
         cameras.Add(camFour);
+        cameras.Add(camFive);
+        cameras.Add(camSix);
+        cameras.Add(camSeven);
+        cameras.Add(camEight);
 
         camOne.enabled = true;
         camTwo.enabled = false;
         camThree.enabled = false;
         camFour.enabled = false;
+        camFive.enabled = false;
+        camSix.enabled = false;
+        camSeven.enabled = false;
+        camEight.enabled = false;
 
 
         i = 0;
@@ -57,8 +65,6 @@ public class switchCameras : MonoBehaviour
 
             cameras[i].enabled = true;
 
-            //camOne.SetActive(false);
-            //camTwo.SetActive(true);
 
         }
 
@@ -79,9 +85,7 @@ public class switchCameras : MonoBehaviour
 
 
             cameras[i].enabled = true;
-
-            //camOne.SetActive(true);
-            //camTwo.SetActive(false);            
+         
         }
 
     }

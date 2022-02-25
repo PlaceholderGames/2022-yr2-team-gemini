@@ -10,6 +10,7 @@ public class unlockCamera : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         blackCoverToDelete.SetActive(false);
+        
     }
 
 
