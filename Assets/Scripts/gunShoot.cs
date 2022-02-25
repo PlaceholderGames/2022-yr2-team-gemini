@@ -25,10 +25,12 @@ public class gunShoot : MonoBehaviour
             Shoot();
         }
 
-        if(targetCounter == 7)
-        {
-            keyObject.SetActive(true);
-        }
+
+    }
+
+    void showKey()
+    {
+        keyObject.SetActive(true);
     }
 
     void Shoot()
@@ -40,6 +42,11 @@ public class gunShoot : MonoBehaviour
             {
                 targetCounter += 1;
                 Destroy(hit.transform.gameObject);
+
+                if (targetCounter == 7)
+                {
+                    showKey();
+                }
             }
             Debug.Log(hit.transform);
         }
