@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 1814912635}
   - component: {fileID: 1814912634}
   - component: {fileID: 1814912633}
+  - component: {fileID: 1814912638}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -822,6 +823,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 105}
   m_SizeDelta: {x: 380, y: 70}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1814912638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814912632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53283570206205f4b87aaa21260d1d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7939cb2fc99de8b4ababb28376c6ab8d, type: 3}
 --- !u!1 &1844865838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,6 +1028,7 @@ GameObject:
   - component: {fileID: 1914197085}
   - component: {fileID: 1914197084}
   - component: {fileID: 1914197083}
+  - component: {fileID: 1914197088}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -1148,6 +1163,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 60}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1914197088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914197082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53283570206205f4b87aaa21260d1d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 7939cb2fc99de8b4ababb28376c6ab8d, type: 3}
 --- !u!1 &2142617843
 GameObject:
   m_ObjectHideFlags: 0
