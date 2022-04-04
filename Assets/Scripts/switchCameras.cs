@@ -15,6 +15,7 @@ public class switchCameras : MonoBehaviour
     public Camera camSix;
     public Camera camSeven;
     public Camera camEight;
+    //public Camera headCam;
 
     public List<Camera> cameras;
     public int i;
@@ -33,6 +34,7 @@ public class switchCameras : MonoBehaviour
         cameras.Add(camSeven);
         cameras.Add(camEight);
 
+
         camOne.enabled = true;
         camTwo.enabled = false;
         camThree.enabled = false;
@@ -41,6 +43,7 @@ public class switchCameras : MonoBehaviour
         camSix.enabled = false;
         camSeven.enabled = false;
         camEight.enabled = false;
+        
 
 
         i = 0;
@@ -48,7 +51,14 @@ public class switchCameras : MonoBehaviour
         sizeCheck = i + 1;
     }
 
-
+    
+    public void addHeadCam(Camera headCam)
+    {
+        cameras.Add(headCam);
+        headCam.enabled = false;
+        maxCameras = cameras.Count;
+    }
+    
     // Update is called once per frame
     void Update()
     {
