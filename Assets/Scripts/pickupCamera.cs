@@ -16,7 +16,6 @@ public class pickupCamera : MonoBehaviour
     {
         objectWithScript.GetComponent<switchCameras>();
 
-        
     }
 
 

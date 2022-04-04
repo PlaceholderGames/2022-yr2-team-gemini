@@ -104,6 +104,8 @@ namespace Unity.FPS.Gameplay
         public bool IsDead { get; private set; }
         public bool IsCrouching { get; private set; }
 
+        //[SerializeField] GameObject jetpackVFX;
+
         public float RotationMultiplier
         {
             get
@@ -168,6 +170,10 @@ namespace Unity.FPS.Gameplay
             // force the crouch state to false when starting
             SetCrouchingState(false, true);
             UpdateCharacterHeight(true);
+
+            //Instantiate(jetpackVFX, transform.position, Quaternion.identity);
+            //jetpackVFX.SetActive(true);
+            
         }
 
         void Update()

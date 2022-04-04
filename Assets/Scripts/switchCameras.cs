@@ -51,6 +51,7 @@ public class switchCameras : MonoBehaviour
         sizeCheck = i + 1;
     }
 
+
     
     public void addHeadCam(Camera headCam)
     {
