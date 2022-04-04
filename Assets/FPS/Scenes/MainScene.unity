@@ -11422,6 +11422,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1382392050}
     m_Modifications:
+    - target: {fileID: 1718364566901660050, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813232304174250161, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819657918246494135, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4859775938037129143, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126199910126580414, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000691584487519905, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7382859768647098186, guid: 96c50777c933abe4dbdb93489cecb8e7,
         type: 3}
       propertyPath: m_RootOrder
@@ -11492,6 +11522,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.083
       objectReference: {fileID: 0}
+    - target: {fileID: 7659537137011842267, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670744136240384709, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 7872010104215422448, guid: 96c50777c933abe4dbdb93489cecb8e7,
         type: 3}
       propertyPath: m_Name
@@ -11499,8 +11539,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872010104215422448, guid: 96c50777c933abe4dbdb93489cecb8e7,
         type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7872010104215422448, guid: 96c50777c933abe4dbdb93489cecb8e7,
+        type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c50777c933abe4dbdb93489cecb8e7, type: 3}
@@ -14689,7 +14734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382392050}
   - component: {fileID: 1382392052}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: headCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14742,7 +14787,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 19767
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 1
