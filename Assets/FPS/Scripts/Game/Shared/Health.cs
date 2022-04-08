@@ -58,7 +58,7 @@ namespace Unity.FPS.Game
                 OnDamaged?.Invoke(trueDamageAmount, damageSource);
             }
 
-            HandleDeath();
+            //HandleDeath();
         }
 
         public void Kill()
@@ -68,9 +68,10 @@ namespace Unity.FPS.Game
             // call OnDamage action
             OnDamaged?.Invoke(MaxHealth, null);
 
-            HandleDeath();
+            //HandleDeath();
         }
 
+        /*
         void HandleDeath()
         {
             if (m_IsDead)
@@ -83,5 +84,6 @@ namespace Unity.FPS.Game
                 OnDie?.Invoke();
             }
         }
+        */
     }
 }
