@@ -403,7 +403,7 @@ namespace Unity.FPS.AI
                 m_Weapons[i].transform.forward = weaponForward;
             }
         }
-
+        /*
         public bool TryAtack(Vector3 enemyPosition)
         {
             if (m_GameFlowManager.GameIsEnding)
@@ -416,7 +416,7 @@ namespace Unity.FPS.AI
 
             // Shoot the weapon
             bool didFire = GetCurrentWeapon().HandleShootInputs(false, true, false);
-
+        
             if (didFire && onAttack != null)
             {
                 onAttack.Invoke();
@@ -427,10 +427,10 @@ namespace Unity.FPS.AI
                     SetCurrentWeapon(nextWeaponIndex);
                 }
             }
-
+        
             return didFire;
         }
-
+        */
         public bool TryDropItem()
         {
             if (DropRate == 0 || LootPrefab == null)

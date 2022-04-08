@@ -126,7 +126,7 @@ namespace Unity.FPS.AI
                     }
 
                     m_EnemyController.OrientTowards(m_EnemyController.KnownDetectedTarget.transform.position);
-                    m_EnemyController.TryAtack(m_EnemyController.KnownDetectedTarget.transform.position);
+                    //m_EnemyController.TryAtack(m_EnemyController.KnownDetectedTarget.transform.position);
                     break;
             }
         }

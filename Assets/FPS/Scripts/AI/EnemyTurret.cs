@@ -87,7 +87,7 @@ namespace Unity.FPS.AI
                         Quaternion.LookRotation(directionToTarget) * m_RotationWeaponForwardToPivot;
                     m_PivotAimingRotation = Quaternion.Slerp(m_PreviousPivotAimingRotation, offsettedTargetRotation,
                         (mustShoot ? AimRotationSharpness : LookAtRotationSharpness) * Time.deltaTime);
-
+                    /*
                     // shoot
                     if (mustShoot)
                     {
@@ -97,7 +97,7 @@ namespace Unity.FPS.AI
 
                         m_EnemyController.TryAtack(TurretAimPoint.position + correctedDirectionToTarget);
                     }
-
+                    */
                     break;
             }
         }
